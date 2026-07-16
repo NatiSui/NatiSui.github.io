@@ -1,0 +1,257 @@
+:root {
+
+    --paper: #FBF8EF;
+    --gold: #EFD99C;
+    --lavender: #DEC0F1;
+    --indigo: #585191;
+    --teal: #5FB49C;
+
+    --text: #2A2835;
+    --muted: #6D6A78;
+
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+
+    margin: 0;
+
+    background: var(--paper);
+
+    color: var(--text);
+
+    font-family: "Inter", sans-serif;
+
+    line-height: 1.8;
+
+}
+
+
+.container {
+
+    max-width: 760px;
+
+    margin: auto;
+
+    padding: 5rem 1.5rem;
+
+}
+
+
+/* Profile */
+
+.profile-photo {
+
+    width: 160px;
+
+    height: 160px;
+
+    object-fit: cover;
+
+    border-radius: 36px;
+
+    border: 5px solid var(--lavender);
+
+    display: block;
+
+    margin: 0 auto 2rem;
+
+}
+
+
+/* Header */
+
+header {
+
+    margin-bottom: 2rem;
+
+}
+
+
+h1 {
+
+    font-family: "Fraunces", serif;
+
+    color: var(--indigo);
+
+    font-size: clamp(3rem, 8vw, 5rem);
+
+    margin: .8rem 0;
+
+    line-height: 1;
+
+}
+
+
+.intro {
+
+    font-size: 1.4rem;
+
+    color: var(--muted);
+
+    max-width: 32rem;
+
+}
+
+
+
+/* Navigation */
+
+.navigation {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 1rem;
+
+    margin: 3rem 0;
+
+    flex-wrap: wrap;
+
+}
+
+
+.navigation a {
+
+    color: var(--indigo);
+
+    text-decoration: none;
+
+    border: 1.5px solid var(--indigo);
+
+    padding: .5rem 1rem;
+
+    border-radius: 999px;
+
+    transition: .25s;
+
+    font-weight: 500;
+
+}
+
+
+.navigation a:hover {
+
+    background: var(--teal);
+
+    border-color: var(--teal);
+
+    color: white;
+
+    transform: translateY(-2px);
+
+}
+
+
+
+/* Welcome card */
+
+.card {
+
+    background: transparent;
+    border: 2px solid var(--lavender);
+
+    padding: 2rem;
+
+    border-radius: 24px;
+
+    margin-bottom: 3rem;
+
+}
+
+
+.card h2 {
+
+    margin-top: 0;
+
+    font-family: "Fraunces", serif;
+
+    color: var(--indigo);
+
+}
+
+
+
+/* Sections */
+
+section {
+
+    margin-bottom: 3rem;
+
+}
+
+
+section h2 {
+
+    font-family: "Fraunces", serif;
+
+    color: var(--indigo);
+
+}
+
+.label {
+
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    color: var(--teal);
+
+
+}
+
+
+/* Currently */
+
+.currently {
+    margin-top: 3rem;
+}
+
+.currently h2 {
+    margin-bottom: 1rem;
+}
+
+.currently p {
+    margin: 0 0 .8rem;
+    line-height: 1.7;
+}
+
+
+
+
+/* Lists */
+
+ul {
+
+    padding-left: 1.3rem;
+
+}
+
+
+li {
+
+    margin-bottom: .75rem;
+
+}
+
+
+
+/* Footer */
+
+footer {
+
+    margin-top: 5rem;
+
+    padding-top: 2rem;
+
+    border-top: 2px solid var(--gold);
+
+    color: var(--muted);
+
+    font-size: .9rem;
+
+}
